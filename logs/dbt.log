@@ -1,0 +1,24 @@
+
+
+============================== 2025-02-09 16:34:44.009123 | 6389d5e6-fc5f-4b60-87d1-fb9389867794 ==============================
+[0m16:34:44.009123 [info ] [MainThread]: Running with dbt=1.4.9
+[0m16:34:44.011126 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'c:\\Users\\a.chaykovskiy\\Documents\\EDU\\OTUS\\dbt-datavault-postgres', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'project_dir': 'c:\\Users\\a.chaykovskiy\\Documents\\EDU\\OTUS\\dbt-datavault-postgres', 'which': 'deps', 'rpc_method': 'deps', 'indirect_selection': 'eager'}
+[0m16:34:44.012126 [debug] [MainThread]: Tracking: tracking
+[0m16:34:44.022121 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000191A2577090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001919FC6C2D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000191A28126D0>]}
+[0m16:34:44.024124 [debug] [MainThread]: Set downloads directory='C:\Users\A48FB~1.CHA\AppData\Local\Temp\dbt-downloads-yn_tlsyw'
+[0m16:34:44.025163 [debug] [MainThread]: Executing "git clone --depth 1 https://github.com/DWH-course-materials/automate-dv db8ecd393f82c9fa2e85e59b6f530826"
+[0m16:34:59.834942 [debug] [MainThread]: STDOUT: "b''"
+[0m16:34:59.835469 [debug] [MainThread]: STDERR: "b"Cloning into 'db8ecd393f82c9fa2e85e59b6f530826'...\nwarning: ----------------- SECURITY WARNING ----------------\nwarning: | TLS certificate verification has been disabled! |\nwarning: ---------------------------------------------------\nwarning: HTTPS connections may not be secure. See https://aka.ms/gcm/tlsverify for more information.\nremote: Repository not found.\nfatal: repository 'https://github.com/DWH-course-materials/automate-dv/' not found\n""
+[0m16:34:59.836010 [debug] [MainThread]: command return code=128
+[0m16:34:59.837705 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000191A2577090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000191A25F76D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000191A25F7350>]}
+[0m16:34:59.838780 [debug] [MainThread]: Flushing usage events
+[0m16:35:00.491738 [error] [MainThread]: Encountered an error:
+Internal Error
+  Error checking out spec='None' for repo https://github.com/DWH-course-materials/automate-dv
+  Cloning into 'db8ecd393f82c9fa2e85e59b6f530826'...
+  warning: ----------------- SECURITY WARNING ----------------
+  warning: | TLS certificate verification has been disabled! |
+  warning: ---------------------------------------------------
+  warning: HTTPS connections may not be secure. See https://aka.ms/gcm/tlsverify for more information.
+  remote: Repository not found.
+  fatal: repository 'https://github.com/DWH-course-materials/automate-dv/' not found
