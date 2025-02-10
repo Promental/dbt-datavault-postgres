@@ -22,3 +22,518 @@ Internal Error
   warning: HTTPS connections may not be secure. See https://aka.ms/gcm/tlsverify for more information.
   remote: Repository not found.
   fatal: repository 'https://github.com/DWH-course-materials/automate-dv/' not found
+
+
+============================== 2025-02-09 21:22:04.396966 | 7f45012a-32e4-4c8f-ae5e-a54a97151e35 ==============================
+[0m21:22:04.396966 [info ] [MainThread]: Running with dbt=1.4.0
+[0m21:22:04.401072 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/workspace', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'show': False, 'which': 'seed', 'rpc_method': 'seed', 'indirect_selection': 'eager'}
+[0m21:22:04.402729 [debug] [MainThread]: Tracking: tracking
+[0m21:22:04.410386 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f64c8cc15e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f64c7426c70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f64c7426c10>]}
+[0m21:22:04.448033 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f64c7426fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f64c7426b80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f64c7426e80>]}
+[0m21:22:04.449165 [debug] [MainThread]: Flushing usage events
+[0m21:22:05.148590 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Failed to read package: Runtime Error
+    no dbt_project.yml found at expected path /workspace/dbt_packages/automate_dv/dbt_project.yml
+
+Error encountered in /workspace/dbt_packages/automate_dv
+
+
+============================== 2025-02-10 09:15:56.255761 | 5b3a33cf-f58f-43bd-8817-2050eeec3077 ==============================
+[0m09:15:56.255761 [info ] [MainThread]: Running with dbt=1.4.0
+[0m09:15:56.258794 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/workspace', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'deps', 'rpc_method': 'deps', 'indirect_selection': 'eager'}
+[0m09:15:56.260299 [debug] [MainThread]: Tracking: tracking
+[0m09:15:56.266436 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6d9431f100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6d9431fcd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6d9431f610>]}
+[0m09:15:56.283672 [debug] [MainThread]: Set downloads directory='/tmp/dbt-downloads-oc5fhkon'
+[0m09:15:56.285780 [debug] [MainThread]: Executing "git clone --depth 1 https://github.com/DWH-course-examples/automate-dv 762b94e9556ea6498f16273383b29357"
+[0m09:15:57.621106 [debug] [MainThread]: STDOUT: "b''"
+[0m09:15:57.623147 [debug] [MainThread]: STDERR: "b"Cloning into '762b94e9556ea6498f16273383b29357'...\n""
+[0m09:15:57.624601 [debug] [MainThread]: Pulling new dependency 762b94e9556ea6498f16273383b29357.
+[0m09:15:57.625824 [debug] [MainThread]: Executing "git rev-parse HEAD"
+[0m09:15:57.632312 [debug] [MainThread]: STDOUT: "b'4d34ff1e4d728aba959a880018d32856c7eaff4b\n'"
+[0m09:15:57.633873 [debug] [MainThread]: STDERR: "b''"
+[0m09:15:57.635218 [debug] [MainThread]:   Checking out revision master.
+[0m09:15:57.636475 [debug] [MainThread]: Executing "git remote set-branches origin master"
+[0m09:15:57.642212 [debug] [MainThread]: STDOUT: "b''"
+[0m09:15:57.643704 [debug] [MainThread]: STDERR: "b''"
+[0m09:15:57.644944 [debug] [MainThread]: Executing "git fetch origin --depth 1 --tags master"
+[0m09:15:59.026521 [debug] [MainThread]: STDOUT: "b''"
+[0m09:15:59.028271 [debug] [MainThread]: STDERR: "b'From https://github.com/DWH-course-examples/automate-dv\n * branch            master     -> FETCH_HEAD\n * [new tag]         v0.1-pre   -> v0.1-pre\n * [new tag]         v0.10.0    -> v0.10.0\n * [new tag]         v0.10.1    -> v0.10.1\n * [new tag]         v0.2-pre   -> v0.2-pre\n * [new tag]         v0.2.1-pre -> v0.2.1-pre\n * [new tag]         v0.2.2-pre -> v0.2.2-pre\n * [new tag]         v0.2.3-pre -> v0.2.3-pre\n * [new tag]         v0.2.4-pre -> v0.2.4-pre\n * [new tag]         v0.3-pre   -> v0.3-pre\n * [new tag]         v0.3.1-pre -> v0.3.1-pre\n * [new tag]         v0.3.2-pre -> v0.3.2-pre\n * [new tag]         v0.3.3-pre -> v0.3.3-pre\n * [new tag]         v0.4       -> v0.4\n * [new tag]         v0.4.1     -> v0.4.1\n * [new tag]         v0.5       -> v0.5\n * [new tag]         v0.6       -> v0.6\n * [new tag]         v0.6-b1    -> v0.6-b1\n * [new tag]         v0.6-b2    -> v0.6-b2\n * [new tag]         v0.6.1     -> v0.6.1\n * [new tag]         v0.6.2     -> v0.6.2\n * [new tag]         v0.7.0     -> v0.7.0\n * [new tag]         v0.7.1     -> v0.7.1\n * [new tag]         v0.7.2     -> v0.7.2\n * [new tag]         v0.7.3     -> v0.7.3\n * [new tag]         v0.7.4     -> v0.7.4\n * [new tag]         v0.7.5     -> v0.7.5\n * [new tag]         v0.7.6     -> v0.7.6\n * [new tag]         v0.7.6-b1  -> v0.7.6-b1\n * [new tag]         v0.7.6.1   -> v0.7.6.1\n * [new tag]         v0.7.7     -> v0.7.7\n * [new tag]         v0.7.8     -> v0.7.8\n * [new tag]         v0.7.9     -> v0.7.9\n * [new tag]         v0.8.0     -> v0.8.0\n * [new tag]         v0.8.1     -> v0.8.1\n * [new tag]         v0.8.2     -> v0.8.2\n * [new tag]         v0.8.3     -> v0.8.3\n * [new tag]         v0.9.0     -> v0.9.0\n * [new tag]         v0.9.1     -> v0.9.1\n * [new tag]         v0.9.2     -> v0.9.2\n * [new tag]         v0.9.3     -> v0.9.3\n * [new tag]         v0.9.4     -> v0.9.4\n * [new tag]         v0.9.5     -> v0.9.5\n * [new tag]         v0.9.6     -> v0.9.6\n * [new tag]         v0.9.7     -> v0.9.7\n'"
+[0m09:15:59.029632 [debug] [MainThread]: Executing "git tag --list"
+[0m09:15:59.036660 [debug] [MainThread]: STDOUT: "b'v0.1-pre\nv0.10.0\nv0.10.1\nv0.2-pre\nv0.2.1-pre\nv0.2.2-pre\nv0.2.3-pre\nv0.2.4-pre\nv0.3-pre\nv0.3.1-pre\nv0.3.2-pre\nv0.3.3-pre\nv0.4\nv0.4.1\nv0.5\nv0.6\nv0.6-b1\nv0.6-b2\nv0.6.1\nv0.6.2\nv0.7.0\nv0.7.1\nv0.7.2\nv0.7.3\nv0.7.4\nv0.7.5\nv0.7.6\nv0.7.6-b1\nv0.7.6.1\nv0.7.7\nv0.7.8\nv0.7.9\nv0.8.0\nv0.8.1\nv0.8.2\nv0.8.3\nv0.9.0\nv0.9.1\nv0.9.2\nv0.9.3\nv0.9.4\nv0.9.5\nv0.9.6\nv0.9.7\n'"
+[0m09:15:59.038142 [debug] [MainThread]: STDERR: "b''"
+[0m09:15:59.039485 [debug] [MainThread]: Executing "git reset --hard origin/master"
+[0m09:15:59.054686 [debug] [MainThread]: STDOUT: "b'HEAD is now at 4d34ff1 Update as_constant.sql\n'"
+[0m09:15:59.056358 [debug] [MainThread]: STDERR: "b''"
+[0m09:15:59.057841 [debug] [MainThread]: Executing "git rev-parse HEAD"
+[0m09:15:59.062972 [debug] [MainThread]: STDOUT: "b'4d34ff1e4d728aba959a880018d32856c7eaff4b\n'"
+[0m09:15:59.064699 [debug] [MainThread]: STDERR: "b''"
+[0m09:15:59.066088 [debug] [MainThread]:   Checked out at 4d34ff1.
+[0m09:15:59.068089 [warn ] [MainThread]: [33mWARNING: The git package "https://github.com/DWH-course-examples/automate-dv" 
+	is None.
+	This can introduce breaking changes into your project without warning!
+
+See https://docs.getdbt.com/docs/package-management#section-specifying-package-versions[0m
+[0m09:15:59.081270 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m09:15:59.360298 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m09:15:59.365156 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m09:15:59.565842 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m09:15:59.710237 [debug] [MainThread]: Executing "git clone --depth 1 https://github.com/DWH-course-examples/automate-dv 762b94e9556ea6498f16273383b29357"
+[0m09:15:59.716420 [debug] [MainThread]: STDOUT: "b''"
+[0m09:15:59.718025 [debug] [MainThread]: STDERR: "b"fatal: destination path '762b94e9556ea6498f16273383b29357' already exists and is not an empty directory.\n""
+[0m09:15:59.719387 [debug] [MainThread]: command return code=128
+[0m09:15:59.721552 [debug] [MainThread]: Updating existing dependency 762b94e9556ea6498f16273383b29357.
+[0m09:15:59.723079 [debug] [MainThread]: Executing "git rev-parse HEAD"
+[0m09:15:59.728460 [debug] [MainThread]: STDOUT: "b'4d34ff1e4d728aba959a880018d32856c7eaff4b\n'"
+[0m09:15:59.730409 [debug] [MainThread]: STDERR: "b''"
+[0m09:15:59.732035 [debug] [MainThread]:   Checking out revision master.
+[0m09:15:59.733445 [debug] [MainThread]: Executing "git remote set-branches origin master"
+[0m09:15:59.741654 [debug] [MainThread]: STDOUT: "b''"
+[0m09:15:59.743270 [debug] [MainThread]: STDERR: "b''"
+[0m09:15:59.744480 [debug] [MainThread]: Executing "git fetch origin --depth 1 --tags master"
+[0m09:16:00.453427 [debug] [MainThread]: STDOUT: "b''"
+[0m09:16:00.455839 [debug] [MainThread]: STDERR: "b'From https://github.com/DWH-course-examples/automate-dv\n * branch            master     -> FETCH_HEAD\n'"
+[0m09:16:00.457808 [debug] [MainThread]: Executing "git tag --list"
+[0m09:16:00.466154 [debug] [MainThread]: STDOUT: "b'v0.1-pre\nv0.10.0\nv0.10.1\nv0.2-pre\nv0.2.1-pre\nv0.2.2-pre\nv0.2.3-pre\nv0.2.4-pre\nv0.3-pre\nv0.3.1-pre\nv0.3.2-pre\nv0.3.3-pre\nv0.4\nv0.4.1\nv0.5\nv0.6\nv0.6-b1\nv0.6-b2\nv0.6.1\nv0.6.2\nv0.7.0\nv0.7.1\nv0.7.2\nv0.7.3\nv0.7.4\nv0.7.5\nv0.7.6\nv0.7.6-b1\nv0.7.6.1\nv0.7.7\nv0.7.8\nv0.7.9\nv0.8.0\nv0.8.1\nv0.8.2\nv0.8.3\nv0.9.0\nv0.9.1\nv0.9.2\nv0.9.3\nv0.9.4\nv0.9.5\nv0.9.6\nv0.9.7\n'"
+[0m09:16:00.468198 [debug] [MainThread]: STDERR: "b''"
+[0m09:16:00.470029 [debug] [MainThread]: Executing "git reset --hard origin/master"
+[0m09:16:00.480726 [debug] [MainThread]: STDOUT: "b'HEAD is now at 4d34ff1 Update as_constant.sql\n'"
+[0m09:16:00.482592 [debug] [MainThread]: STDERR: "b''"
+[0m09:16:00.484141 [debug] [MainThread]: Executing "git rev-parse HEAD"
+[0m09:16:00.489922 [debug] [MainThread]: STDOUT: "b'4d34ff1e4d728aba959a880018d32856c7eaff4b\n'"
+[0m09:16:00.491704 [debug] [MainThread]: STDERR: "b''"
+[0m09:16:00.493201 [debug] [MainThread]: Already at 4d34ff1, nothing to do.
+[0m09:16:00.495103 [warn ] [MainThread]: [33mWARNING: The git package "https://github.com/DWH-course-examples/automate-dv" 
+	is None.
+	This can introduce breaking changes into your project without warning!
+
+See https://docs.getdbt.com/docs/package-management#section-specifying-package-versions[0m
+[0m09:16:00.508232 [info ] [MainThread]: Installing https://github.com/DWH-course-examples/automate-dv
+[0m09:16:00.519366 [debug] [MainThread]: Executing "git clone --depth 1 https://github.com/DWH-course-examples/automate-dv 762b94e9556ea6498f16273383b29357"
+[0m09:16:00.524676 [debug] [MainThread]: STDOUT: "b''"
+[0m09:16:00.526259 [debug] [MainThread]: STDERR: "b"fatal: destination path '762b94e9556ea6498f16273383b29357' already exists and is not an empty directory.\n""
+[0m09:16:00.527585 [debug] [MainThread]: command return code=128
+[0m09:16:00.529226 [debug] [MainThread]: Updating existing dependency 762b94e9556ea6498f16273383b29357.
+[0m09:16:00.530722 [debug] [MainThread]: Executing "git rev-parse HEAD"
+[0m09:16:00.535592 [debug] [MainThread]: STDOUT: "b'4d34ff1e4d728aba959a880018d32856c7eaff4b\n'"
+[0m09:16:00.537263 [debug] [MainThread]: STDERR: "b''"
+[0m09:16:00.538605 [debug] [MainThread]:   Checking out revision master.
+[0m09:16:00.540105 [debug] [MainThread]: Executing "git remote set-branches origin master"
+[0m09:16:00.546449 [debug] [MainThread]: STDOUT: "b''"
+[0m09:16:00.547913 [debug] [MainThread]: STDERR: "b''"
+[0m09:16:00.549074 [debug] [MainThread]: Executing "git fetch origin --depth 1 --tags master"
+[0m09:16:01.600484 [debug] [MainThread]: STDOUT: "b''"
+[0m09:16:01.602450 [debug] [MainThread]: STDERR: "b'From https://github.com/DWH-course-examples/automate-dv\n * branch            master     -> FETCH_HEAD\n'"
+[0m09:16:01.604201 [debug] [MainThread]: Executing "git tag --list"
+[0m09:16:01.611127 [debug] [MainThread]: STDOUT: "b'v0.1-pre\nv0.10.0\nv0.10.1\nv0.2-pre\nv0.2.1-pre\nv0.2.2-pre\nv0.2.3-pre\nv0.2.4-pre\nv0.3-pre\nv0.3.1-pre\nv0.3.2-pre\nv0.3.3-pre\nv0.4\nv0.4.1\nv0.5\nv0.6\nv0.6-b1\nv0.6-b2\nv0.6.1\nv0.6.2\nv0.7.0\nv0.7.1\nv0.7.2\nv0.7.3\nv0.7.4\nv0.7.5\nv0.7.6\nv0.7.6-b1\nv0.7.6.1\nv0.7.7\nv0.7.8\nv0.7.9\nv0.8.0\nv0.8.1\nv0.8.2\nv0.8.3\nv0.9.0\nv0.9.1\nv0.9.2\nv0.9.3\nv0.9.4\nv0.9.5\nv0.9.6\nv0.9.7\n'"
+[0m09:16:01.613140 [debug] [MainThread]: STDERR: "b''"
+[0m09:16:01.614755 [debug] [MainThread]: Executing "git reset --hard origin/master"
+[0m09:16:01.624104 [debug] [MainThread]: STDOUT: "b'HEAD is now at 4d34ff1 Update as_constant.sql\n'"
+[0m09:16:01.625761 [debug] [MainThread]: STDERR: "b''"
+[0m09:16:01.627091 [debug] [MainThread]: Executing "git rev-parse HEAD"
+[0m09:16:01.631920 [debug] [MainThread]: STDOUT: "b'4d34ff1e4d728aba959a880018d32856c7eaff4b\n'"
+[0m09:16:01.633435 [debug] [MainThread]: STDERR: "b''"
+[0m09:16:01.634678 [debug] [MainThread]: Already at 4d34ff1, nothing to do.
+[0m09:16:05.283706 [info ] [MainThread]:   Installed from revision master
+[0m09:16:05.285948 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '5b3a33cf-f58f-43bd-8817-2050eeec3077', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6d9431b5b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6d9431b8b0>]}
+[0m09:16:05.287671 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m09:16:09.711216 [info ] [MainThread]:   Installed from version 1.3.0
+[0m09:16:09.712664 [info ] [MainThread]:   Up to date!
+[0m09:16:09.714168 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '5b3a33cf-f58f-43bd-8817-2050eeec3077', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6d94a81b20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6d94394d30>]}
+[0m09:16:09.715594 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6d9431f0a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6d9431fa30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6d9431f610>]}
+[0m09:16:09.716496 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2025-02-10 09:17:04.634833 | ed03f786-2a64-494f-afc1-5cbdc6a428dc ==============================
+[0m09:17:04.634833 [info ] [MainThread]: Running with dbt=1.4.0
+[0m09:17:04.637866 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/workspace', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'clean', 'indirect_selection': 'eager'}
+[0m09:17:04.639097 [debug] [MainThread]: Tracking: tracking
+[0m09:17:04.645508 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7fd5191100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7fd5191cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7fd5191610>]}
+[0m09:17:04.650123 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7fd5191640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7fd5191070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7fd5191610>]}
+[0m09:17:04.651627 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2025-02-10 09:17:32.615207 | 7bec9a2b-af68-4b9b-bb44-0aa0a48aa9dc ==============================
+[0m09:17:32.615207 [info ] [MainThread]: Running with dbt=1.4.0
+[0m09:17:32.617824 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/workspace', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'deps', 'rpc_method': 'deps', 'indirect_selection': 'eager'}
+[0m09:17:32.619234 [debug] [MainThread]: Tracking: tracking
+[0m09:17:32.623491 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f054c518100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f054c518cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f054c5185e0>]}
+[0m09:17:32.631150 [debug] [MainThread]: Set downloads directory='/tmp/dbt-downloads-m9aq_1vy'
+[0m09:17:32.632666 [debug] [MainThread]: Executing "git clone --depth 1 https://github.com/DWH-course-examples/automate-dv 762b94e9556ea6498f16273383b29357"
+[0m09:17:33.894115 [debug] [MainThread]: STDOUT: "b''"
+[0m09:17:33.895789 [debug] [MainThread]: STDERR: "b"Cloning into '762b94e9556ea6498f16273383b29357'...\n""
+[0m09:17:33.897424 [debug] [MainThread]: Pulling new dependency 762b94e9556ea6498f16273383b29357.
+[0m09:17:33.898721 [debug] [MainThread]: Executing "git rev-parse HEAD"
+[0m09:17:33.904933 [debug] [MainThread]: STDOUT: "b'4d34ff1e4d728aba959a880018d32856c7eaff4b\n'"
+[0m09:17:33.906483 [debug] [MainThread]: STDERR: "b''"
+[0m09:17:33.907819 [debug] [MainThread]:   Checking out revision master.
+[0m09:17:33.909195 [debug] [MainThread]: Executing "git remote set-branches origin master"
+[0m09:17:33.916021 [debug] [MainThread]: STDOUT: "b''"
+[0m09:17:33.917630 [debug] [MainThread]: STDERR: "b''"
+[0m09:17:33.918926 [debug] [MainThread]: Executing "git fetch origin --depth 1 --tags master"
+[0m09:17:35.073241 [debug] [MainThread]: STDOUT: "b''"
+[0m09:17:35.074934 [debug] [MainThread]: STDERR: "b'From https://github.com/DWH-course-examples/automate-dv\n * branch            master     -> FETCH_HEAD\n * [new tag]         v0.1-pre   -> v0.1-pre\n * [new tag]         v0.10.0    -> v0.10.0\n * [new tag]         v0.10.1    -> v0.10.1\n * [new tag]         v0.2-pre   -> v0.2-pre\n * [new tag]         v0.2.1-pre -> v0.2.1-pre\n * [new tag]         v0.2.2-pre -> v0.2.2-pre\n * [new tag]         v0.2.3-pre -> v0.2.3-pre\n * [new tag]         v0.2.4-pre -> v0.2.4-pre\n * [new tag]         v0.3-pre   -> v0.3-pre\n * [new tag]         v0.3.1-pre -> v0.3.1-pre\n * [new tag]         v0.3.2-pre -> v0.3.2-pre\n * [new tag]         v0.3.3-pre -> v0.3.3-pre\n * [new tag]         v0.4       -> v0.4\n * [new tag]         v0.4.1     -> v0.4.1\n * [new tag]         v0.5       -> v0.5\n * [new tag]         v0.6       -> v0.6\n * [new tag]         v0.6-b1    -> v0.6-b1\n * [new tag]         v0.6-b2    -> v0.6-b2\n * [new tag]         v0.6.1     -> v0.6.1\n * [new tag]         v0.6.2     -> v0.6.2\n * [new tag]         v0.7.0     -> v0.7.0\n * [new tag]         v0.7.1     -> v0.7.1\n * [new tag]         v0.7.2     -> v0.7.2\n * [new tag]         v0.7.3     -> v0.7.3\n * [new tag]         v0.7.4     -> v0.7.4\n * [new tag]         v0.7.5     -> v0.7.5\n * [new tag]         v0.7.6     -> v0.7.6\n * [new tag]         v0.7.6-b1  -> v0.7.6-b1\n * [new tag]         v0.7.6.1   -> v0.7.6.1\n * [new tag]         v0.7.7     -> v0.7.7\n * [new tag]         v0.7.8     -> v0.7.8\n * [new tag]         v0.7.9     -> v0.7.9\n * [new tag]         v0.8.0     -> v0.8.0\n * [new tag]         v0.8.1     -> v0.8.1\n * [new tag]         v0.8.2     -> v0.8.2\n * [new tag]         v0.8.3     -> v0.8.3\n * [new tag]         v0.9.0     -> v0.9.0\n * [new tag]         v0.9.1     -> v0.9.1\n * [new tag]         v0.9.2     -> v0.9.2\n * [new tag]         v0.9.3     -> v0.9.3\n * [new tag]         v0.9.4     -> v0.9.4\n * [new tag]         v0.9.5     -> v0.9.5\n * [new tag]         v0.9.6     -> v0.9.6\n * [new tag]         v0.9.7     -> v0.9.7\n'"
+[0m09:17:35.076244 [debug] [MainThread]: Executing "git tag --list"
+[0m09:17:35.081643 [debug] [MainThread]: STDOUT: "b'v0.1-pre\nv0.10.0\nv0.10.1\nv0.2-pre\nv0.2.1-pre\nv0.2.2-pre\nv0.2.3-pre\nv0.2.4-pre\nv0.3-pre\nv0.3.1-pre\nv0.3.2-pre\nv0.3.3-pre\nv0.4\nv0.4.1\nv0.5\nv0.6\nv0.6-b1\nv0.6-b2\nv0.6.1\nv0.6.2\nv0.7.0\nv0.7.1\nv0.7.2\nv0.7.3\nv0.7.4\nv0.7.5\nv0.7.6\nv0.7.6-b1\nv0.7.6.1\nv0.7.7\nv0.7.8\nv0.7.9\nv0.8.0\nv0.8.1\nv0.8.2\nv0.8.3\nv0.9.0\nv0.9.1\nv0.9.2\nv0.9.3\nv0.9.4\nv0.9.5\nv0.9.6\nv0.9.7\n'"
+[0m09:17:35.083194 [debug] [MainThread]: STDERR: "b''"
+[0m09:17:35.084409 [debug] [MainThread]: Executing "git reset --hard origin/master"
+[0m09:17:35.096064 [debug] [MainThread]: STDOUT: "b'HEAD is now at 4d34ff1 Update as_constant.sql\n'"
+[0m09:17:35.097480 [debug] [MainThread]: STDERR: "b''"
+[0m09:17:35.098977 [debug] [MainThread]: Executing "git rev-parse HEAD"
+[0m09:17:35.103972 [debug] [MainThread]: STDOUT: "b'4d34ff1e4d728aba959a880018d32856c7eaff4b\n'"
+[0m09:17:35.105569 [debug] [MainThread]: STDERR: "b''"
+[0m09:17:35.106869 [debug] [MainThread]:   Checked out at 4d34ff1.
+[0m09:17:35.108749 [warn ] [MainThread]: [33mWARNING: The git package "https://github.com/DWH-course-examples/automate-dv" 
+	is None.
+	This can introduce breaking changes into your project without warning!
+
+See https://docs.getdbt.com/docs/package-management#section-specifying-package-versions[0m
+[0m09:17:35.122651 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m09:17:35.438888 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m09:17:35.442053 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m09:17:35.597768 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m09:17:35.737359 [debug] [MainThread]: Executing "git clone --depth 1 https://github.com/DWH-course-examples/automate-dv 762b94e9556ea6498f16273383b29357"
+[0m09:17:35.743035 [debug] [MainThread]: STDOUT: "b''"
+[0m09:17:35.744774 [debug] [MainThread]: STDERR: "b"fatal: destination path '762b94e9556ea6498f16273383b29357' already exists and is not an empty directory.\n""
+[0m09:17:35.746158 [debug] [MainThread]: command return code=128
+[0m09:17:35.748252 [debug] [MainThread]: Updating existing dependency 762b94e9556ea6498f16273383b29357.
+[0m09:17:35.749641 [debug] [MainThread]: Executing "git rev-parse HEAD"
+[0m09:17:35.755174 [debug] [MainThread]: STDOUT: "b'4d34ff1e4d728aba959a880018d32856c7eaff4b\n'"
+[0m09:17:35.756810 [debug] [MainThread]: STDERR: "b''"
+[0m09:17:35.758145 [debug] [MainThread]:   Checking out revision master.
+[0m09:17:35.759434 [debug] [MainThread]: Executing "git remote set-branches origin master"
+[0m09:17:35.766353 [debug] [MainThread]: STDOUT: "b''"
+[0m09:17:35.767940 [debug] [MainThread]: STDERR: "b''"
+[0m09:17:35.769292 [debug] [MainThread]: Executing "git fetch origin --depth 1 --tags master"
+[0m09:17:36.400969 [debug] [MainThread]: STDOUT: "b''"
+[0m09:17:36.403044 [debug] [MainThread]: STDERR: "b'From https://github.com/DWH-course-examples/automate-dv\n * branch            master     -> FETCH_HEAD\n'"
+[0m09:17:36.404651 [debug] [MainThread]: Executing "git tag --list"
+[0m09:17:36.411820 [debug] [MainThread]: STDOUT: "b'v0.1-pre\nv0.10.0\nv0.10.1\nv0.2-pre\nv0.2.1-pre\nv0.2.2-pre\nv0.2.3-pre\nv0.2.4-pre\nv0.3-pre\nv0.3.1-pre\nv0.3.2-pre\nv0.3.3-pre\nv0.4\nv0.4.1\nv0.5\nv0.6\nv0.6-b1\nv0.6-b2\nv0.6.1\nv0.6.2\nv0.7.0\nv0.7.1\nv0.7.2\nv0.7.3\nv0.7.4\nv0.7.5\nv0.7.6\nv0.7.6-b1\nv0.7.6.1\nv0.7.7\nv0.7.8\nv0.7.9\nv0.8.0\nv0.8.1\nv0.8.2\nv0.8.3\nv0.9.0\nv0.9.1\nv0.9.2\nv0.9.3\nv0.9.4\nv0.9.5\nv0.9.6\nv0.9.7\n'"
+[0m09:17:36.413519 [debug] [MainThread]: STDERR: "b''"
+[0m09:17:36.414915 [debug] [MainThread]: Executing "git reset --hard origin/master"
+[0m09:17:36.423912 [debug] [MainThread]: STDOUT: "b'HEAD is now at 4d34ff1 Update as_constant.sql\n'"
+[0m09:17:36.425372 [debug] [MainThread]: STDERR: "b''"
+[0m09:17:36.426624 [debug] [MainThread]: Executing "git rev-parse HEAD"
+[0m09:17:36.432131 [debug] [MainThread]: STDOUT: "b'4d34ff1e4d728aba959a880018d32856c7eaff4b\n'"
+[0m09:17:36.433699 [debug] [MainThread]: STDERR: "b''"
+[0m09:17:36.434950 [debug] [MainThread]: Already at 4d34ff1, nothing to do.
+[0m09:17:36.436886 [warn ] [MainThread]: [33mWARNING: The git package "https://github.com/DWH-course-examples/automate-dv" 
+	is None.
+	This can introduce breaking changes into your project without warning!
+
+See https://docs.getdbt.com/docs/package-management#section-specifying-package-versions[0m
+[0m09:17:36.450898 [info ] [MainThread]: Installing https://github.com/DWH-course-examples/automate-dv
+[0m09:17:36.689954 [debug] [MainThread]: Executing "git clone --depth 1 https://github.com/DWH-course-examples/automate-dv 762b94e9556ea6498f16273383b29357"
+[0m09:17:36.694207 [debug] [MainThread]: STDOUT: "b''"
+[0m09:17:36.695367 [debug] [MainThread]: STDERR: "b"fatal: destination path '762b94e9556ea6498f16273383b29357' already exists and is not an empty directory.\n""
+[0m09:17:36.696317 [debug] [MainThread]: command return code=128
+[0m09:17:36.697688 [debug] [MainThread]: Updating existing dependency 762b94e9556ea6498f16273383b29357.
+[0m09:17:36.698713 [debug] [MainThread]: Executing "git rev-parse HEAD"
+[0m09:17:36.703436 [debug] [MainThread]: STDOUT: "b'4d34ff1e4d728aba959a880018d32856c7eaff4b\n'"
+[0m09:17:36.704826 [debug] [MainThread]: STDERR: "b''"
+[0m09:17:36.706103 [debug] [MainThread]:   Checking out revision master.
+[0m09:17:36.707130 [debug] [MainThread]: Executing "git remote set-branches origin master"
+[0m09:17:36.712733 [debug] [MainThread]: STDOUT: "b''"
+[0m09:17:36.714121 [debug] [MainThread]: STDERR: "b''"
+[0m09:17:36.715381 [debug] [MainThread]: Executing "git fetch origin --depth 1 --tags master"
+[0m09:17:37.333378 [debug] [MainThread]: STDOUT: "b''"
+[0m09:17:37.335391 [debug] [MainThread]: STDERR: "b'From https://github.com/DWH-course-examples/automate-dv\n * branch            master     -> FETCH_HEAD\n'"
+[0m09:17:37.337061 [debug] [MainThread]: Executing "git tag --list"
+[0m09:17:37.343372 [debug] [MainThread]: STDOUT: "b'v0.1-pre\nv0.10.0\nv0.10.1\nv0.2-pre\nv0.2.1-pre\nv0.2.2-pre\nv0.2.3-pre\nv0.2.4-pre\nv0.3-pre\nv0.3.1-pre\nv0.3.2-pre\nv0.3.3-pre\nv0.4\nv0.4.1\nv0.5\nv0.6\nv0.6-b1\nv0.6-b2\nv0.6.1\nv0.6.2\nv0.7.0\nv0.7.1\nv0.7.2\nv0.7.3\nv0.7.4\nv0.7.5\nv0.7.6\nv0.7.6-b1\nv0.7.6.1\nv0.7.7\nv0.7.8\nv0.7.9\nv0.8.0\nv0.8.1\nv0.8.2\nv0.8.3\nv0.9.0\nv0.9.1\nv0.9.2\nv0.9.3\nv0.9.4\nv0.9.5\nv0.9.6\nv0.9.7\n'"
+[0m09:17:37.345247 [debug] [MainThread]: STDERR: "b''"
+[0m09:17:37.346825 [debug] [MainThread]: Executing "git reset --hard origin/master"
+[0m09:17:37.355339 [debug] [MainThread]: STDOUT: "b'HEAD is now at 4d34ff1 Update as_constant.sql\n'"
+[0m09:17:37.357025 [debug] [MainThread]: STDERR: "b''"
+[0m09:17:37.358386 [debug] [MainThread]: Executing "git rev-parse HEAD"
+[0m09:17:37.364217 [debug] [MainThread]: STDOUT: "b'4d34ff1e4d728aba959a880018d32856c7eaff4b\n'"
+[0m09:17:37.365878 [debug] [MainThread]: STDERR: "b''"
+[0m09:17:37.367310 [debug] [MainThread]: Already at 4d34ff1, nothing to do.
+[0m09:17:40.675522 [info ] [MainThread]:   Installed from revision master
+[0m09:17:40.677679 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '7bec9a2b-af68-4b9b-bb44-0aa0a48aa9dc', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f054c46a100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f054c46a0d0>]}
+[0m09:17:40.679284 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m09:17:45.248992 [info ] [MainThread]:   Installed from version 1.3.0
+[0m09:17:45.250558 [info ] [MainThread]:   Up to date!
+[0m09:17:45.252291 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '7bec9a2b-af68-4b9b-bb44-0aa0a48aa9dc', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f054cc79c70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f054c46a370>]}
+[0m09:17:45.253618 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f054c58ad00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f054c58ac10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f054c518070>]}
+[0m09:17:45.254598 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2025-02-10 09:17:57.275834 | 6e4258f2-bf9f-475f-b8c6-2317030ca74f ==============================
+[0m09:17:57.275834 [info ] [MainThread]: Running with dbt=1.4.0
+[0m09:17:57.278369 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/workspace', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m09:17:57.279418 [debug] [MainThread]: Tracking: tracking
+[0m09:17:57.283309 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f92c83e8760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f92c83e8f40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f92c838ba30>]}
+[0m09:17:57.502331 [debug] [MainThread]: Executing "git --help"
+[0m09:17:57.509107 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m09:17:57.511484 [debug] [MainThread]: STDERR: "b''"
+[0m09:17:57.521866 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m09:17:57.523792 [debug] [MainThread]: Using postgres connection "debug"
+[0m09:17:57.525075 [debug] [MainThread]: On debug: select 1 as id
+[0m09:17:57.526388 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m09:17:57.557557 [debug] [MainThread]: SQL status: SELECT 1 in 0 seconds
+[0m09:17:57.559940 [debug] [MainThread]: On debug: Close
+[0m09:17:57.561391 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f92c92f9160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f92c8386ca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f92c8386220>]}
+[0m09:17:57.563281 [debug] [MainThread]: Flushing usage events
+[0m09:17:58.177074 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2025-02-10 09:18:06.252447 | b27f0a08-894e-450a-96ad-d5cb7a6edc7c ==============================
+[0m09:18:06.252447 [info ] [MainThread]: Running with dbt=1.4.0
+[0m09:18:06.255482 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/workspace', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'show': False, 'which': 'seed', 'rpc_method': 'seed', 'indirect_selection': 'eager'}
+[0m09:18:06.256594 [debug] [MainThread]: Tracking: tracking
+[0m09:18:06.261274 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f489fb091c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f489fb09220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f489fb09fd0>]}
+[0m09:18:06.348633 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m09:18:06.350246 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'b27f0a08-894e-450a-96ad-d5cb7a6edc7c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f489faf5a00>]}
+[0m09:18:11.074944 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 5 unused configuration paths:
+- models.jaffle_shop_dbtvault.raw_vault
+- models.jaffle_shop_dbtvault.raw_vault.links
+- models.jaffle_shop_dbtvault.raw_vault.sats
+- models.jaffle_shop_dbtvault.raw_vault.hubs
+- models.jaffle_shop_dbtvault.stage
+[0m09:18:11.085586 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b27f0a08-894e-450a-96ad-d5cb7a6edc7c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f489f85f0d0>]}
+[0m09:18:11.115042 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b27f0a08-894e-450a-96ad-d5cb7a6edc7c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f489fae9c40>]}
+[0m09:18:11.116470 [info ] [MainThread]: Found 0 models, 0 tests, 0 snapshots, 0 analyses, 658 macros, 0 operations, 2 seed files, 7 sources, 0 exposures, 0 metrics
+[0m09:18:11.118157 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b27f0a08-894e-450a-96ad-d5cb7a6edc7c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f48a4d15970>]}
+[0m09:18:11.123880 [info ] [MainThread]: 
+[0m09:18:11.128000 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m09:18:11.130873 [debug] [ThreadPool]: Acquiring new postgres connection 'list_postgres'
+[0m09:18:11.147993 [debug] [ThreadPool]: Using postgres connection "list_postgres"
+[0m09:18:11.149712 [debug] [ThreadPool]: On list_postgres: /* {"app": "dbt", "dbt_version": "1.4.0", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_postgres"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m09:18:11.151064 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:18:11.169596 [debug] [ThreadPool]: SQL status: SELECT 4 in 0 seconds
+[0m09:18:11.173317 [debug] [ThreadPool]: On list_postgres: Close
+[0m09:18:11.176151 [debug] [ThreadPool]: Acquiring new postgres connection 'create_postgres_dbt'
+[0m09:18:11.178102 [debug] [ThreadPool]: Acquiring new postgres connection 'create_postgres_dbt'
+[0m09:18:11.179615 [debug] [ThreadPool]: Creating schema "ReferenceKeyMsg(database='postgres', schema='dbt', identifier=None)"
+[0m09:18:11.188649 [debug] [ThreadPool]: Using postgres connection "create_postgres_dbt"
+[0m09:18:11.190101 [debug] [ThreadPool]: On create_postgres_dbt: BEGIN
+[0m09:18:11.191488 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m09:18:11.207602 [debug] [ThreadPool]: SQL status: BEGIN in 0 seconds
+[0m09:18:11.217032 [debug] [ThreadPool]: Using postgres connection "create_postgres_dbt"
+[0m09:18:11.218654 [debug] [ThreadPool]: On create_postgres_dbt: /* {"app": "dbt", "dbt_version": "1.4.0", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "create_postgres_dbt"} */
+create schema if not exists "dbt"
+[0m09:18:11.248323 [debug] [ThreadPool]: SQL status: CREATE SCHEMA in 0 seconds
+[0m09:18:11.251068 [debug] [ThreadPool]: On create_postgres_dbt: COMMIT
+[0m09:18:11.252726 [debug] [ThreadPool]: Using postgres connection "create_postgres_dbt"
+[0m09:18:11.254238 [debug] [ThreadPool]: On create_postgres_dbt: COMMIT
+[0m09:18:11.260258 [debug] [ThreadPool]: SQL status: COMMIT in 0 seconds
+[0m09:18:11.261955 [debug] [ThreadPool]: On create_postgres_dbt: Close
+[0m09:18:11.266153 [debug] [ThreadPool]: Acquiring new postgres connection 'list_postgres_dbt'
+[0m09:18:11.277545 [debug] [ThreadPool]: Using postgres connection "list_postgres_dbt"
+[0m09:18:11.279393 [debug] [ThreadPool]: On list_postgres_dbt: BEGIN
+[0m09:18:11.280950 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m09:18:11.292638 [debug] [ThreadPool]: SQL status: BEGIN in 0 seconds
+[0m09:18:11.294497 [debug] [ThreadPool]: Using postgres connection "list_postgres_dbt"
+[0m09:18:11.296120 [debug] [ThreadPool]: On list_postgres_dbt: /* {"app": "dbt", "dbt_version": "1.4.0", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_postgres_dbt"} */
+select
+      'postgres' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dbt'
+    union all
+    select
+      'postgres' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dbt'
+  
+[0m09:18:11.324289 [debug] [ThreadPool]: SQL status: SELECT 0 in 0 seconds
+[0m09:18:11.327874 [debug] [ThreadPool]: On list_postgres_dbt: ROLLBACK
+[0m09:18:11.329856 [debug] [ThreadPool]: On list_postgres_dbt: Close
+[0m09:18:11.382129 [debug] [MainThread]: Using postgres connection "master"
+[0m09:18:11.384402 [debug] [MainThread]: On master: BEGIN
+[0m09:18:11.386136 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m09:18:11.397965 [debug] [MainThread]: SQL status: BEGIN in 0 seconds
+[0m09:18:11.399919 [debug] [MainThread]: Using postgres connection "master"
+[0m09:18:11.401420 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.4.0", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m09:18:11.420308 [debug] [MainThread]: SQL status: SELECT 0 in 0 seconds
+[0m09:18:11.423242 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b27f0a08-894e-450a-96ad-d5cb7a6edc7c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f489f794520>]}
+[0m09:18:11.424913 [debug] [MainThread]: On master: ROLLBACK
+[0m09:18:11.426722 [debug] [MainThread]: Using postgres connection "master"
+[0m09:18:11.428328 [debug] [MainThread]: On master: BEGIN
+[0m09:18:11.430371 [debug] [MainThread]: SQL status: BEGIN in 0 seconds
+[0m09:18:11.431810 [debug] [MainThread]: On master: COMMIT
+[0m09:18:11.433179 [debug] [MainThread]: Using postgres connection "master"
+[0m09:18:11.434497 [debug] [MainThread]: On master: COMMIT
+[0m09:18:11.436193 [debug] [MainThread]: SQL status: COMMIT in 0 seconds
+[0m09:18:11.437617 [debug] [MainThread]: On master: Close
+[0m09:18:11.439447 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m09:18:11.441110 [info ] [MainThread]: 
+[0m09:18:11.464411 [debug] [Thread-1  ]: Began running node seed.jaffle_shop_dbtvault.source_customers
+[0m09:18:11.466013 [info ] [Thread-1  ]: 1 of 2 START seed file dbt.source_customers .................................... [RUN]
+[0m09:18:11.468463 [debug] [Thread-1  ]: Acquiring new postgres connection 'seed.jaffle_shop_dbtvault.source_customers'
+[0m09:18:11.470539 [debug] [Thread-1  ]: Began compiling node seed.jaffle_shop_dbtvault.source_customers
+[0m09:18:11.472357 [debug] [Thread-1  ]: Timing info for seed.jaffle_shop_dbtvault.source_customers (compile): 2025-02-10 09:18:11.472111 => 2025-02-10 09:18:11.472124
+[0m09:18:11.474127 [debug] [Thread-1  ]: Began executing node seed.jaffle_shop_dbtvault.source_customers
+[0m09:18:11.526079 [debug] [Thread-1  ]: Using postgres connection "seed.jaffle_shop_dbtvault.source_customers"
+[0m09:18:11.527735 [debug] [Thread-1  ]: On seed.jaffle_shop_dbtvault.source_customers: BEGIN
+[0m09:18:11.529568 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m09:18:11.539217 [debug] [Thread-1  ]: SQL status: BEGIN in 0 seconds
+[0m09:18:11.540883 [debug] [Thread-1  ]: Using postgres connection "seed.jaffle_shop_dbtvault.source_customers"
+[0m09:18:11.542181 [debug] [Thread-1  ]: On seed.jaffle_shop_dbtvault.source_customers: /* {"app": "dbt", "dbt_version": "1.4.0", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "seed.jaffle_shop_dbtvault.source_customers"} */
+
+    create table "postgres"."dbt"."source_customers" ("id" integer,"first_name" text,"last_name" text,"email" text)
+  
+[0m09:18:11.607531 [debug] [Thread-1  ]: SQL status: CREATE TABLE in 0 seconds
+[0m09:18:11.789293 [debug] [Thread-1  ]: Using postgres connection "seed.jaffle_shop_dbtvault.source_customers"
+[0m09:18:11.791021 [debug] [Thread-1  ]: On seed.jaffle_shop_dbtvault.source_customers: 
+          insert into "postgres"."dbt"."source_customers" ("id", "first_name", "last_name", "email") values
+          (%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(...
+[0m09:18:11.797022 [debug] [Thread-1  ]: SQL status: INSERT 0 103 in 0 seconds
+[0m09:18:11.817443 [debug] [Thread-1  ]: Writing runtime SQL for node "seed.jaffle_shop_dbtvault.source_customers"
+[0m09:18:11.859644 [debug] [Thread-1  ]: On seed.jaffle_shop_dbtvault.source_customers: COMMIT
+[0m09:18:11.861006 [debug] [Thread-1  ]: Using postgres connection "seed.jaffle_shop_dbtvault.source_customers"
+[0m09:18:11.862102 [debug] [Thread-1  ]: On seed.jaffle_shop_dbtvault.source_customers: COMMIT
+[0m09:18:11.865087 [debug] [Thread-1  ]: SQL status: COMMIT in 0 seconds
+[0m09:18:11.868223 [debug] [Thread-1  ]: Timing info for seed.jaffle_shop_dbtvault.source_customers (execute): 2025-02-10 09:18:11.475374 => 2025-02-10 09:18:11.868153
+[0m09:18:11.869538 [debug] [Thread-1  ]: On seed.jaffle_shop_dbtvault.source_customers: Close
+[0m09:18:11.871210 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b27f0a08-894e-450a-96ad-d5cb7a6edc7c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f489f8f4f40>]}
+[0m09:18:11.872559 [info ] [Thread-1  ]: 1 of 2 OK loaded seed file dbt.source_customers ................................ [[32mINSERT 103[0m in 0.40s]
+[0m09:18:11.875944 [debug] [Thread-1  ]: Finished running node seed.jaffle_shop_dbtvault.source_customers
+[0m09:18:11.878562 [debug] [Thread-1  ]: Began running node seed.jaffle_shop_dbtvault.source_orders
+[0m09:18:11.880607 [info ] [Thread-1  ]: 2 of 2 START seed file dbt.source_orders ....................................... [RUN]
+[0m09:18:11.882344 [debug] [Thread-1  ]: Acquiring new postgres connection 'seed.jaffle_shop_dbtvault.source_orders'
+[0m09:18:11.883557 [debug] [Thread-1  ]: Began compiling node seed.jaffle_shop_dbtvault.source_orders
+[0m09:18:11.884803 [debug] [Thread-1  ]: Timing info for seed.jaffle_shop_dbtvault.source_orders (compile): 2025-02-10 09:18:11.884704 => 2025-02-10 09:18:11.884711
+[0m09:18:11.886036 [debug] [Thread-1  ]: Began executing node seed.jaffle_shop_dbtvault.source_orders
+[0m09:18:11.902930 [debug] [Thread-1  ]: Using postgres connection "seed.jaffle_shop_dbtvault.source_orders"
+[0m09:18:11.904421 [debug] [Thread-1  ]: On seed.jaffle_shop_dbtvault.source_orders: BEGIN
+[0m09:18:11.906132 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m09:18:11.919247 [debug] [Thread-1  ]: SQL status: BEGIN in 0 seconds
+[0m09:18:11.921294 [debug] [Thread-1  ]: Using postgres connection "seed.jaffle_shop_dbtvault.source_orders"
+[0m09:18:11.922502 [debug] [Thread-1  ]: On seed.jaffle_shop_dbtvault.source_orders: /* {"app": "dbt", "dbt_version": "1.4.0", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "seed.jaffle_shop_dbtvault.source_orders"} */
+
+    create table "postgres"."dbt"."source_orders" ("id" integer,"user_id" integer,"order_date" date,"status" text)
+  
+[0m09:18:11.936107 [debug] [Thread-1  ]: SQL status: CREATE TABLE in 0 seconds
+[0m09:18:12.065870 [debug] [Thread-1  ]: Using postgres connection "seed.jaffle_shop_dbtvault.source_orders"
+[0m09:18:12.067500 [debug] [Thread-1  ]: On seed.jaffle_shop_dbtvault.source_orders: 
+          insert into "postgres"."dbt"."source_orders" ("id", "user_id", "order_date", "status") values
+          (%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%...
+[0m09:18:12.074176 [debug] [Thread-1  ]: SQL status: INSERT 0 99 in 0 seconds
+[0m09:18:12.077053 [debug] [Thread-1  ]: Writing runtime SQL for node "seed.jaffle_shop_dbtvault.source_orders"
+[0m09:18:12.089283 [debug] [Thread-1  ]: On seed.jaffle_shop_dbtvault.source_orders: COMMIT
+[0m09:18:12.090581 [debug] [Thread-1  ]: Using postgres connection "seed.jaffle_shop_dbtvault.source_orders"
+[0m09:18:12.091817 [debug] [Thread-1  ]: On seed.jaffle_shop_dbtvault.source_orders: COMMIT
+[0m09:18:12.094597 [debug] [Thread-1  ]: SQL status: COMMIT in 0 seconds
+[0m09:18:12.096773 [debug] [Thread-1  ]: Timing info for seed.jaffle_shop_dbtvault.source_orders (execute): 2025-02-10 09:18:11.888128 => 2025-02-10 09:18:12.096675
+[0m09:18:12.098341 [debug] [Thread-1  ]: On seed.jaffle_shop_dbtvault.source_orders: Close
+[0m09:18:12.100371 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b27f0a08-894e-450a-96ad-d5cb7a6edc7c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f489f8f4e50>]}
+[0m09:18:12.101930 [info ] [Thread-1  ]: 2 of 2 OK loaded seed file dbt.source_orders ................................... [[32mINSERT 99[0m in 0.22s]
+[0m09:18:12.103523 [debug] [Thread-1  ]: Finished running node seed.jaffle_shop_dbtvault.source_orders
+[0m09:18:12.106669 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m09:18:12.108482 [debug] [MainThread]: Using postgres connection "master"
+[0m09:18:12.109701 [debug] [MainThread]: On master: BEGIN
+[0m09:18:12.110876 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m09:18:12.121117 [debug] [MainThread]: SQL status: BEGIN in 0 seconds
+[0m09:18:12.122576 [debug] [MainThread]: On master: COMMIT
+[0m09:18:12.123773 [debug] [MainThread]: Using postgres connection "master"
+[0m09:18:12.124886 [debug] [MainThread]: On master: COMMIT
+[0m09:18:12.126173 [debug] [MainThread]: SQL status: COMMIT in 0 seconds
+[0m09:18:12.127342 [debug] [MainThread]: On master: Close
+[0m09:18:12.128909 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m09:18:12.130055 [debug] [MainThread]: Connection 'seed.jaffle_shop_dbtvault.source_orders' was properly closed.
+[0m09:18:12.131172 [info ] [MainThread]: 
+[0m09:18:12.132332 [info ] [MainThread]: Finished running 2 seeds in 0 hours 0 minutes and 1.01 seconds (1.01s).
+[0m09:18:12.134645 [debug] [MainThread]: Command end result
+[0m09:18:12.164388 [info ] [MainThread]: 
+[0m09:18:12.166176 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m09:18:12.168740 [info ] [MainThread]: 
+[0m09:18:12.172311 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[0m09:18:12.175618 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f489f79c9a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f489faf1730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f489faf1c10>]}
+[0m09:18:12.177757 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2025-02-10 09:18:34.526241 | ec55370f-c901-4116-b698-de3e5b42da6c ==============================
+[0m09:18:34.526241 [info ] [MainThread]: Running with dbt=1.4.0
+[0m09:18:34.529355 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/workspace', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m09:18:34.530611 [debug] [MainThread]: Tracking: tracking
+[0m09:18:34.538182 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7effe800d8e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7effe800d880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7effe800d820>]}
+[0m09:18:37.283265 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m09:18:37.284081 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m09:18:37.285403 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 5 unused configuration paths:
+- models.jaffle_shop_dbtvault.raw_vault.hubs
+- models.jaffle_shop_dbtvault.raw_vault.links
+- models.jaffle_shop_dbtvault.raw_vault.sats
+- models.jaffle_shop_dbtvault.raw_vault
+- models.jaffle_shop_dbtvault.stage
+[0m09:18:37.295486 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ec55370f-c901-4116-b698-de3e5b42da6c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7effe7f720d0>]}
+[0m09:18:37.321310 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ec55370f-c901-4116-b698-de3e5b42da6c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7effe7dc9310>]}
+[0m09:18:37.322511 [info ] [MainThread]: Found 0 models, 0 tests, 0 snapshots, 0 analyses, 658 macros, 0 operations, 2 seed files, 7 sources, 0 exposures, 0 metrics
+[0m09:18:37.323896 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ec55370f-c901-4116-b698-de3e5b42da6c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7effe7dc9190>]}
+[0m09:18:37.326607 [info ] [MainThread]: 
+[0m09:18:37.328465 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m09:18:37.330178 [debug] [MainThread]: Command end result
+[0m09:18:37.359739 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7effe8013e20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7effe800d8e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7effe800d880>]}
+[0m09:18:37.361073 [debug] [MainThread]: Flushing usage events
