@@ -10,4 +10,4 @@ WITH as_of_date AS (
                             end_date=end_date) }}
 )
 
-SELECT DATE_{{datepart}} as AS_OF_DATE FROM as_of_date
+SELECT date_{{datepart}} as as_of_date FROM as_of_date

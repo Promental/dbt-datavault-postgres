@@ -2,23 +2,23 @@
 
 {%- set yaml_metadata -%}
 source_model: hub_customer
-src_pk: CUSTOMER_PK
-as_of_dates_table: AS_OF_DATE
+src_pk: customer_pk
+as_of_dates_table: as_of_date
 satellites:
-  SAT_CUSTOMER:
+  sat_customer:
     pk:
-      PK: CUSTOMER_PK
+      pk: customer_pk
     ldts:
-      LDTS: LOAD_DATE
-  SAT_CUSTOMER_CRM:
+      ldts: load_date
+  sat_customer_crm:
     pk:
-      PK: CUSTOMER_PK
+      pk: customer_pk
     ldts:
-      LDTS: LOAD_DATE
+      ldts: load_date
 stage_tables:
-  STG_CUSTOMERS: LOAD_DATE
-  STG_CUSTOMERS_CRM: LOAD_DATE
-src_ldts: LOAD_DATE
+  stg_customers: load_date
+  stg_customers_crm: load_date
+src_ldts: load_date
 {%- endset -%}
 
 {% set metadata_dict = fromyaml(yaml_metadata) %}
