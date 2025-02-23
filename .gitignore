@@ -1,6 +1,9 @@
 /.idea/
 /logs/
 .dbeaver-data-sources*.xml
+logs/dbt.log
+/dbt.log
+dbt.log
 
 ### dbt ###
 target/
