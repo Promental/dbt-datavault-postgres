@@ -1,5 +1,5 @@
 /.idea/
-logs/dbt.log
+logs/
 # Created by https://www.toptal.com/developers/gitignore/api/windows,dbt,dbeaver
 # Edit at https://www.toptal.com/developers/gitignore?templates=windows,dbt,dbeaver
 ### DBeaver ###
