@@ -2,7 +2,6 @@
 logs/dbt.log
 # Created by https://www.toptal.com/developers/gitignore/api/windows,dbt,dbeaver
 # Edit at https://www.toptal.com/developers/gitignore?templates=windows,dbt,dbeaver
-
 ### DBeaver ###
 # ide config file
 .dbeaver-data-sources*.xml
