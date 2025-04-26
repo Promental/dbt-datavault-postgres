@@ -14,6 +14,7 @@ target-path: target
 
 vars:
   load_date: 'current_timestamp'
+  as_of_date: 'current_timestamp'
 
 models:
   jaffle_shop_dbtvault:
