@@ -7,3 +7,14 @@ sources:
     tables:
       - name: as_of_date
       - name: customer_pit
+      - name: order_by_week
+        description: "Витрина для анализа количества заказов по неделям"
+        columns:
+          - name: week_start
+            description: "Начало недели"
+          - name: status
+            description: "Статус заказа"
+          - name: order_count
+            description: "Количество заказов"
+          - name: cumulative_count
+            description: "Накопительный итог по количеству заказов для каждого статуса"

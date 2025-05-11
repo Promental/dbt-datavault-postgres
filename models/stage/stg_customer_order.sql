@@ -3,7 +3,11 @@ with stg_orders as (
 ),
 
 stg_customers as (
-    select id, CUSTOMER_KEY, CUSTOMER_PK from {{ref('stg_customers')}}
+    select 
+    id,
+    email as customer_key,  -- используем email вместо customer_key
+    customer_pk
+    FROM {{ ref('stg_customers') }}
 )
 
 select  ORDER_KEY, CUSTOMER_KEY, CUSTOMER_PK, ORDER_PK from stg_orders so

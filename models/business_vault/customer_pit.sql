@@ -9,16 +9,16 @@ satellites:
     pk:
       pk: customer_pk
     ldts:
-      ldts: load_date
+      ldts: effective_from
   sat_customer_crm:
     pk:
       pk: customer_pk
     ldts:
-      ldts: load_date
-src_ldts: load_date
+      ldts: effective_from
+src_ldts: effective_from
 stage_tables_ldts:
-  stg_customers: load_date
-  stg_customers_crm: load_date
+  stg_customers: effective_from
+  stg_customers_crm: effective_from
 {%- endset -%}
 
 {% set metadata_dict = fromyaml(yaml_metadata) %}
@@ -34,5 +34,5 @@ stage_tables_ldts:
                    src_pk=src_pk,
                    as_of_dates_table=as_of_dates_table,
                    satellites=satellites,
-                   stage_tables_ldts=stage_tables_ldts,
-                   src_ldts=src_ldts) }}
+                   src_ldts=src_ldts,
+                   stage_tables_ldts=stage_tables_ldts) }}
